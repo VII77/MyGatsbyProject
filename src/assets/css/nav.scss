@@ -1,0 +1,80 @@
+@import './variables.scss';
+
+nav {
+background: #3C9073;
+  box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
+  width: 100vw;
+  height: 5rem;
+}
+
+
+.nav-center{
+    width: 90vw;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+.nav-flex-container{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+}
+
+
+.nav-btn svg {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    background: #777;
+    height: 23.9375rem;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.nav-link {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: $grey-1000;
+    letter-spacing: $letterSpacing;
+    padding: 1rem 0;
+    margin-left: 1rem;
+    /* border-top: 3px solid $grey-500 */
+}
+
+.active-link {
+    color: $primary-500;
+}
+
+.contact-link {
+    padding: 0rem 1rem;
+    margin: auto;
+    width: fit-content;
+
+}
+
+.mobile-nav-link {
+     border-top: 3px solid $grey-500;
+     margin-left: 0;
+     color: white;
+}
+
+.mobile-nav-link:last-child {
+       border-bottom: 3px solid $grey-500;
+}
