@@ -1,18 +1,13 @@
 import React from "react"
 import { Layout } from "../components/Layout"
 import styled from "styled-components"
-import Icon from "../assets/backgroundwave.svg"
 import Typing from "react-typing-animation"
 import { TypingLoop } from "../components/TypingLoop"
 import { CardMainContent } from "../components/CardMainContent"
 
 export default function Home() {
   return (
-    <Layout>
       <div className="content-1">
-        <Background>
-          <Icon></Icon>
-        </Background>
         <SubHeader>
           <Typing speed={10}>
             <div className="large-text">
@@ -36,7 +31,6 @@ export default function Home() {
         </MainArea>
         <BackgroundTyping>{/* <TypingLoop></TypingLoop> */}</BackgroundTyping>
       </div>
-    </Layout>
   )
 }
 
@@ -57,11 +51,7 @@ export const FlexContainer = styled.div`
   }
 `
 
-export const Background = styled.div`
-  position: absolute;
-  width: 100vw;
-  z-index: -100;
-`
+
 
 export const BackgroundTyping = styled.div`
   position: absolute;

@@ -4,7 +4,6 @@ nav {
 background: #3C9073;
   box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
   width: 100vw;
-  height: 5rem;
 }
 
 
@@ -15,7 +14,7 @@ background: #3C9073;
 }
 
 .nav-flex-container{
-    height: 5rem;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,6 +22,9 @@ background: #3C9073;
 
 .flex-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto ;
 
 }
 
@@ -31,6 +33,7 @@ background: #3C9073;
     align-items: center;
     height: 50px;
     width: 200px;
+    padding: 0 20px;
 }
 
 

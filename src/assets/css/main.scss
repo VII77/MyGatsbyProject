@@ -1,7 +1,8 @@
-@import './variables.scss';
-@import './button.scss';
-@import './nav.scss';
-@import './card.scss';
+@import "./variables.scss";
+@import "./button.scss";
+@import "./nav.scss";
+@import "./card.scss";
+@import "./footer.scss";
 
 *,
 ::after,
@@ -23,14 +24,18 @@ html {
   }
 }
 
-
 body {
-  background: #8DFFE4;
+  background: #8dffe4;
   color: var(--textColor);
   font-family: $bodyFont;
   font-weight: 400;
   line-height: 1.75;
-      z-index: -100;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  flex: 1;
 }
 
 p {
@@ -38,20 +43,19 @@ p {
 }
 
 a {
-    color: inherit;
-    text-decoration: inherit;
-        font-weight: 400;
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: 400;
 }
 
-.active-link{
-    color: white;
-
+.active-link {
+  color: white;
 }
 
 a:hover {
-    color: white; 
-    text-decoration:none; 
-    cursor:pointer;  
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .page {
@@ -60,24 +64,21 @@ a:hover {
   margin: 0 auto;
 }
 
-
-
 .page {
   min-height: calc(100vh - (6rem + 4rem));
 }
-
 
 /*#########*/
 /* Footer */
 /*#########*/
 .page-footer {
-  text-align: center;
-  height: 4rem;
+  width: 100%;
+  background: $background;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: var(--black);
+  align-items: center;
   color: var(--white);
+  margin-top: auto;
 }
 .page-footer h5 {
   margin-bottom: 0;
@@ -90,9 +91,149 @@ a:hover {
   color: var(--primary-500);
 }
 
-
-.large-text{
+.large-text {
   font-size: 30px;
   color: white;
+}
 
+.width-50 {
+  margin: 2rem;
+  background-color: #18392d;
+  color: white !important;
+}
+
+.complement-footer {
+  flex: 1 1 auto;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.register-btn {
+  margin-top: 10px;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  font-size: 5px;
+  color: $primary-100;
+  padding: 2px 400px;
+  background: $primary-100;
+  transform: translateX(0%) translateY(1400%);
+  overflow: hidden;
+}
+
+// .line::before {
+//    content: "";
+//     left: 50%;
+//     font-size: 10px;
+//     color: $primary-100;
+//     padding: 0 100px;
+//     background:$primary-100;
+//     transform: translateX(-50%);
+// }
+
+.box .row-header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.box .row-content {
+  flex: 1 1 auto;
+}
+
+.box .row-footer {
+  flex: 0 1 40px;
+}
+
+.bridge {
+  padding-top: 90px;
+  width: 600px;
+  transform: scaleX(1.8) scaleY(1.3);
+}
+
+.notFound {
+  transform: scale(2.2);
+}
+
+.serverError {
+  transform: scale(1.2);
+}
+
+.test {
+  path {
+    pointer-events: bounding-box;
+  }
+
+  g:hover {
+    path {
+      fill: $primary-400;
+      cursor: pointer;
+    }
+  }
+}
+
+.forgot-password {
+  p {
+    font-size: medium;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  p:hover {
+    color: $primary-100;
+  }
+}
+
+.email-sent {
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.account-created {
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.user-logo {
+  transform: scale(1.2);
+  margin: 0;
+  padding: 0;
+
+  g {
+            pointer-events: bounding-box;
+  }
+
+  path {
+        pointer-events: bounding-box;
+        fill: $primary-100;
+  }
+
+  rect:hover {
+    fill: $primary-400;
+  }
+
+  path:hover{
+        fill: $primary-400;
+  }
 }

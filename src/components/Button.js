@@ -13,7 +13,7 @@ export const Styledbutton = styled.button`
   .btn {
     cursor: pointer;
     appearance: none;
-    color:$white);
+    color:white;
     background: $primary-400;
     border: none;
     border-radius:$borderRadius;

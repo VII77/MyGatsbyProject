@@ -8,8 +8,9 @@
   border-radius: 5px;
   background: white;
     position: relative;
-  width: 90vw;
 
+  overflow: hidden;
+  flex-grow: 0;
 }
 
 .card:hover {
@@ -17,7 +18,7 @@
 }
 
 .container {
-  padding: 20px 40px;
+  padding: 10px 30px 30px 30px
 }
 
 h4 {
@@ -29,6 +30,8 @@ h5 {
         text-align: center;
     font-size: 25px;
 }
+
+
 
 p {
     font-size: 1.5rem;

@@ -60,9 +60,9 @@ const Navbar = () => {
 
 const MenuBackground = styled.section`
   background: #3c9073;
-  position: fixed;
   width: 100vw;
   top: 5rem;
+  z-index: 10;
 `
 
 export default Navbar
